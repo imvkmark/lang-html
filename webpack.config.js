@@ -1,7 +1,11 @@
+// 导入路径解析
 const path = require("path");
+// 导入 webpack 库
 const webpack = require("webpack");
+// 导入vue 架子啊器
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
+    // 入口文件
     entry: "./src/index.js",
     module: {
         rules: [
@@ -28,6 +32,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ["babel-loader"]
             },
+            // 加载 vue 模块
             {
                 test: /\.vue$/,
                 loader: "vue-loader"
@@ -35,7 +40,7 @@ module.exports = {
         ]
     },
     output: {
-        filename: "main.js",
+        filename: "bundle.js",
         path: path.resolve(__dirname, "dist")
     },
     plugins: [
