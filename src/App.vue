@@ -1,12 +1,15 @@
 <template>
     <div id="app">
         <img src="https://jdc.jd.com/img/150" alt="" class="img-circle-150">
+        <Align/>
     </div>
 </template>
 
 <script>
+import Align from './align/index.vue'
 export default {
-    name : 'App'
+    name : 'App',
+    components: {Align}
 };
 </script>
 
