@@ -12,3 +12,32 @@
         }
     }
 }
+.align--dash_middle {
+    color: #f2ae11;
+    font-size: 1.3em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    span {
+        display: block;
+        font-size: 3em;
+        color: #212121;
+        position: relative;
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 52%;
+            background: #494949;
+            width: 9%;
+            height: 2px;
+        }
+        &:before {
+            left: 20%;
+        }
+        &:after {
+            right: 20%;
+        }
+    }
+}

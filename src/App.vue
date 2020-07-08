@@ -1,6 +1,8 @@
 <template>
-    <div id="app">
-        <img src="https://jdc.jd.com/img/150" alt="" class="img-circle-150">
+    <div id="app" class="container">
+        <h4>基本的圆形</h4>
+        <img src="http://www.wulicode.com/img/150" alt="" class="img-circle-150">
+        <h4>排序</h4>
         <Align/>
     </div>
 </template>
