@@ -10,8 +10,9 @@
 <script>
 import AlignVCenter from "./v_center.vue";
 import DashMiddle from "./dash-middle.vue";
+
 export default {
-    components: { AlignVCenter, DashMiddle },
-    name: "Align"
+    components : {AlignVCenter, DashMiddle},
+    name : "Align"
 };
 </script>

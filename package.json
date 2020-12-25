@@ -30,8 +30,10 @@
         "webpack-hot-middleware": "^2.25.0"
     },
     "dependencies": {
+        "element-ui": "^2.14.1",
         "emitter": "^0.0.5",
         "reload": "^3.0.4",
-        "vue": "^2.6.11"
+        "vue": "^2.6.11",
+        "vue-router": "^3.4.9"
     }
 }
