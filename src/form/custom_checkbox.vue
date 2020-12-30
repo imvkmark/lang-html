@@ -18,11 +18,12 @@
             <input type="checkbox">
             <span class="cc-checkbox"></span>
         </label>
-        <label>Four
+        <hr>
+        <label>Radio One
             <input type="radio">
             <span class="cc-radio"></span>
         </label>
-        <label>Four
+        <label>Radio Two
             <input type="radio">
             <span class="cc-radio"></span>
         </label>
@@ -62,21 +63,6 @@ export default {
             cursor: pointer;
             height: 0;
             width: 0;
-            // 选中, 加一个蓝背景
-            &:checked ~ .cc-checkbox,
-            &:checked ~ .cc-radio {
-                background-color: #2196F3;
-                &:after {
-                    display: block;
-                }
-            }
-        }
-        // 鼠标滑过加一个灰背景
-        &:hover {
-            input ~ .cc-checkbox,
-            input ~ .cc-radio {
-                background-color: #CCC;
-            }
         }
 
         // 创建自定义的 checkbox
@@ -104,7 +90,7 @@ export default {
             }
         }
 
-        /* Create a custom radio button */
+        // Radio 按钮默认样式
         .cc-radio {
             position: absolute;
             top: 0;
@@ -123,6 +109,25 @@ export default {
                 height: 8px;
                 border-radius: 50%;
                 background: white;
+            }
+        }
+
+        // 鼠标滑过加一个灰背景
+        &:hover {
+            input ~ .cc-checkbox,
+            input ~ .cc-radio {
+                background-color: #CCC;
+            }
+        }
+
+        // 选中, 加一个蓝背景
+        input {
+            &:checked ~ .cc-checkbox,
+            &:checked ~ .cc-radio {
+                background-color: #2196F3;
+                &:after {
+                    display: block;
+                }
             }
         }
     }
