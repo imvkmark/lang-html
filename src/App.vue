@@ -1,11 +1,17 @@
 <template>
     <div id="app" class="container">
+        <side/>
         <router-view/>
     </div>
 </template>
 
 <script>
+import Side from './component/side.vue';
+
 export default {
+    components : {
+        Side
+    },
     name : 'App'
 };
 </script>
