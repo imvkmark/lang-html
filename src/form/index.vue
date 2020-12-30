@@ -1,7 +1,7 @@
 <template>
     <div class="align--index">
         <h5>自定义单选框/多选框</h5>
-        <a href="#">github</a>
+        <a href="https://github.com/imvkmark/lang-html/blob/master/src/form/custom_checkbox.vue">github</a>
         <CustomCheckbox/>
 
     </div>
